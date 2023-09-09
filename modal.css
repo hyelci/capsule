@@ -15,10 +15,11 @@
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 64px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 712px;
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   animation-duration: 0.4s;
@@ -26,27 +27,70 @@
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  position: absolute;
+  right: 24px;
+  top: 24px;
 }
 
 .close:hover,
 .close:focus {
   color: black;
-  text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
-  padding: 2px 16px;
 }
 
 .modal-body {
-  padding: 2px 16px;
 }
 
 .modal-footer {
   padding: 2px 16px;
+}
+
+.names-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.modal .form-descption {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  color: #4d576b;
+}
+
+.modal input {
+  height: 22px;
+  padding: 13px 16px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #acb1b7;
+  background: #fff;
+}
+.small-input {
+  width: 248px;
+}
+.long-input {
+}
+.modal label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.modal button {
+  margin-top: 32px;
 }

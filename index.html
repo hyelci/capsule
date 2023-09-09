@@ -72,19 +72,80 @@
       </section>
     </main>
     <footer></footer>
-    <div id="user-details-modal" class="modal">
+
+    <div class="modal" id="user-details-modal">
       <div class="modal-content">
+        <svg
+          id="modal-close-btn"
+          class="close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M2 2L14 14"
+            stroke="#8691A5"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M14 2L2 14"
+            stroke="#8691A5"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+
         <div class="modal-header">
-          <span id="modal-close-btn" class="close">&times;</span>
-          <h2>Modal Header</h2>
+          <h2>We need some details</h2>
         </div>
         <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
+          <p class="form-descption">
+            Tell use a little about yourself to download the free e-book! Don't
+            worry, we never share these details with anyone else.
+          </p>
+
+          <form action="" class="form">
+            <div class="names-wrapper">
+              <div class="form-item">
+                <label for="firstname">First name </label>
+                <input
+                  class="small-input"
+                  type="text"
+                  id="firstname"
+                  placeholder="Bob"
+                  required
+                />
+              </div>
+
+              <div class="form-item">
+                <label for="lastname">Last name </label>
+                <input
+                  class="small-input"
+                  type="text"
+                  id="lastname"
+                  placeholder="Burgers"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="email">Email address </label>
+              <input class="long-input" type="email" id="email""
+              placeholder="bob@burgers.com" required />
+            </div>
+          </form>
         </div>
-        <div class="modal-footer">
+        <div>
+          <button>Submit</button>
+        </div>
+
+        <!-- <div class="modal-footer">
           <h3>Modal Footer</h3>
-        </div>
+        </div> -->
       </div>
     </div>
 
