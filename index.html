@@ -7,6 +7,7 @@
     <title>Download free eBook</title>
 
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,8 +34,61 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <img
+          class="hero-image"
+          src="assets/ebook-cover.png"
+          alt="ebook-cover"
+        />
+      </section>
+      <section class="content">
+        <h1>Download our wonderful eBook</h1>
+        <div class="writers">
+          <span>By</span>
+          <img class="profile-picture" src="assets/katia.jpg" alt="" />
+          <span>Katia De Juan</span>
+          <img class="profile-picture" src="assets/gavin.jpg" alt="" />
+          <span>Gavin Williams</span>
+        </div>
+        <div>
+          <img
+            class="mobile-hero-image"
+            src="assets/ebook-cover.png"
+            alt="ebook-cover"
+          />
+        </div>
+        <p>
+          Learn how desing engineering, an essential discipline to creating
+          great products, brings together form and function while accelerating
+          innovation. Written by industry leaders from Indeed, Mailchimp, The
+          New York Times, and Minted, this book will help you connect design and
+          engineering and work more efficiently as a team.
+        </p>
+        <p class="italic">Available in epub, PDF, and audiobook formats</p>
+        <button id="download-ebook-btn" class="button-large">
+          Download eBook
+        </button>
+      </section>
+    </main>
     <footer></footer>
+    <div id="user-details-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="modal-close-btn" class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="text/javascript" src="modal.js"></script>
   </body>
 </html>
