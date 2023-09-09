@@ -1,0 +1,94 @@
+html {
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #202938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav {
+}
+
+.header-nav-logo {
+}
+
+.mobile-hamburger-menu {
+  display: none;
+}
+
+.header-nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-links li {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+}
+
+.header-nav-links li button {
+  margin-left: 16px;
+}
+
+button {
+  border-radius: 20px;
+  background: #444bf7;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  line-height: 100%;
+}
+
+main {
+  max-width: 1440px;
+  margin-top: 160px;
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 24px 24px 0 24px;
+  }
+
+  .header-nav-links {
+    display: none;
+  }
+
+  .mobile-hamburger-menu {
+    display: block;
+  }
+
+  .main {
+    margin-top: 40px;
+  }
+}
+
+/* Medium screens  */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
