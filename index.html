@@ -107,23 +107,16 @@
             worry, we never share these details with anyone else.
           </p>
 
-          <form action="" class="form">
+          <form action="" class="form" id="user-details-form">
             <div class="names-wrapper">
-              <div class="form-item">
+              <div class="form-item small-form-item">
                 <label for="firstname">First name </label>
-                <input
-                  class="small-input"
-                  type="text"
-                  id="firstname"
-                  placeholder="Bob"
-                  required
-                />
+                <input type="text" id="firstname" placeholder="Bob" required />
               </div>
 
-              <div class="form-item">
+              <div class="form-item small-form-item">
                 <label for="lastname">Last name </label>
                 <input
-                  class="small-input"
                   type="text"
                   id="lastname"
                   placeholder="Burgers"
@@ -134,13 +127,19 @@
 
             <div class="form-item">
               <label for="email">Email address </label>
-              <input class="long-input" type="email" id="email""
-              placeholder="bob@burgers.com" required />
+              <input
+                type="email"
+                id="email"
+                placeholder="bob@burgers.com"
+                required
+              />
+            </div>
+
+            <div class="submit-section">
+              <button type="submit" id="form-submit-btn">Submit</button>
+              <p id="success-text">Check your inbox for the download link</p>
             </div>
           </form>
-        </div>
-        <div>
-          <button>Submit</button>
         </div>
 
         <!-- <div class="modal-footer">
